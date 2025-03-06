@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #FFF2F2;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/);
+}
+
+#dropdown-menu {
+    border: none;
+    all: unset;
+    font-size: 45px;
+    padding: 5px;
+}
+
+#h1-header {
+    font-family: 'Montserrat:ital', sans-serif;
+}
