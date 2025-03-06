@@ -10,23 +10,27 @@
     <script src="https://kit.fontawesome.com/1bcc7c022f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header-content">
-        <div class="header-container">
+    <div class="header-container">
+        <div class="header-top">
             <button id="dropdown-menu"><i class="fa-solid fa-bars"></i></button>
             <h1 id="h1-header">HittaKÄK.nu</h1>
-            <button id="userID">Nickenator93</button>
-            <nav class="header-links">
-                <a href="Headerlinks/home.html"><i class="fa-solid fa-house"></i>Hem</a>
-                <a href="Headerlinks/search.html"><i class="fa-solid fa-magnifying-glass"></i>Sök</a>
-                <a href="Headerlinks/favourites.html"><i class="fa-solid fa-heart"></i>Favoriter</a>
-                <a href="Headerlinks/myRecipes.html"><i class="fa-solid fa-book"></i>Mina Recept</a>
-            </nav>
+            <div id="user-log-in">
+                <i id="user-icon" class="fa-regular fa-circle-user"></i>
+                <button id="userID">Nickenator93</button>
+            </div>
         </div>
-    </header>
+        <nav class="header-links">
+            <a href="Headerlinks/home.html"><i class="fa-solid fa-house"></i>Hem</a>
+            <a href="Headerlinks/search.html"><i class="fa-solid fa-magnifying-glass"></i>Sök</a>
+            <a href="Headerlinks/favourites.html"><i class="fa-solid fa-heart"></i>Favoriter</a>
+            <a href="Headerlinks/myRecipes.html"><i class="fa-solid fa-book"></i>Mina Recept</a>
+        </nav>
+    </div>
     <section class="sidebar">
         <button class="sidebar-buttons">Frukost</button>
         <button class="sidebar-buttons">Lunch</button>
