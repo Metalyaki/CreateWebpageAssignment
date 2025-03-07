@@ -20,8 +20,8 @@
             <button id="dropdown-menu"><i class="fa-solid fa-bars"></i></button>
             <h1 id="h1-header">HittaKÄK.nu</h1>
             <div id="user-log-in">
-                <i id="user-icon" class="fa-regular fa-circle-user"></i>
-                <button id="userID">Nickenator93</button>
+                <a href="/Headerlinks/user-1.html" id="userID"><i id="user-icon"
+                        class="fa-regular fa-circle-user"></i>Nickenator93</a>
             </div>
         </div>
         <nav class="header-links">
@@ -31,6 +31,7 @@
             <a href="Headerlinks/myRecipes.html"><i class="fa-solid fa-book"></i>Mina Recept</a>
         </nav>
     </div>
+    <!---
     <section class="sidebar">
         <button class="sidebar-buttons">Frukost</button>
         <button class="sidebar-buttons">Lunch</button>
@@ -42,45 +43,66 @@
         <button class="sidebar-buttons">Dessert</button>
         <button class="sidebar-buttons">Impress</button>
     </section>
+    -->
     <main>
-        <h2>Recept > Lunch > Oscars Stuvade Makaroner</h2>
-        <section class="recipe-head">
-            <div class="head-recipe-container">
-                <img src="images/makaroner.jpeg" alt="Bild på stuvade makaroner med falukorv" id="recipe-image"
-                    width="300">
-                <h1>Oscars Stuvade Makaroner</h1>
-                <p>Skapare: Oscarboi24</p>
-                <p><i class="fa-solid fa-clock"></i> 15 - 20 <br> <i class="fa-solid fa-circle-exclamation"></i> Medel
-                </p>
-                <p>Enkelt, krämigt och sjukt mättande! Dags att fixa käk som inte bara är snabbt och enkelt utan också
-                    är billigt! Ingen fancy skit, bara rejäl comfort food som får dig att känna dig som en kung vid
-                    spisen.</p>
-                <hr>
-                <section class="frame-data">
-                    <p id="comments">9 kommentarer</p>
-                    <p id="save-recipe">Spara recept<button type="button" id="save-recipe-button"><i
-                                class="fa-solid fa-plus"></i></button></i></p>
-                    <section id="star-rating">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </section>
-                    <p id="actual-rating">Betyg: 4,3 / 5</p>
-                </section>
+        <div class="main-content">
+            <div class="previous-pages">
+                <button class="previous-page" type="button">Recept</button>
+                <p class="previous-page-div">></p>
+                <button class="previous-page" type="button">Lunch</button>
+                <p class="previous-page-div">></p>
+                <button class="previous-page" type="button">Oscars Stuvade Makaroner</button>
             </div>
+            <section class="recipe-head">
+                <div class="head-recipe-container">
+                    <img src="images/makaroner.jpeg" alt="Bild på stuvade makaroner med falukorv" id="recipe-image"
+                        width="300">
+                    <div class="head-recipe-content">
+                        <h1 id="recipe-title">Oscars Stuvade Makaroner</h1>
+                        <p id="made-by">Skapare: <a href="/Headerlinks/user-2.html" id="recipe-creator">Oscarboi24</a>
+                        </p>
+                        <div id="recipe-stats">
+                            <p><i class="fa-solid fa-clock"></i> 15 - 20 <br> <i
+                                    class="fa-solid fa-circle-exclamation"></i>
+                                Medel
+                            </p>
+                        </div>
+                        <p id="recipe-text">Enkelt, krämigt och sjukt mättande! Dags att fixa käk som inte bara är
+                            snabbt och enkelt utan
+                            också
+                            är billigt! Ingen fancy skit, bara rejäl comfort food som får dig att känna dig som en kung
+                            vid
+                            spisen.</p>
+                        <hr>
+                        <section class="frame-data">
+                            <div id="top-row-data">
+                                <p id="comments">9 kommentarer</p>
+                                <p id="save-recipe">Spara recept</i></p>
+                                <button type="button" id="save-recipe-button"><i
+                                    class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div id="bottom-row-data">
+                                <section id="star-rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </section>
+                                <p id="actual-rating">Betyg:<strong> 4,3 / 5 </strong></p>
+                            </div>
+                    </div>
+            </section>
+        </div>
         </section>
         <section class="portion-scale">
-            <label for="portion">Portioner:</label>
+            <h3 id="portion-header">Portioner:</h3>
             <div class="portion-controls">
-                <button type="button" id="decrease">−</button>
-                <input type="number" id="portion" value="1" min="2">
-                <button type="button" id="increase">+</button>
+                <button type="button" class="increase-decrease">−</button>
+                <input type="number" id="portion" value="2" min="2">
+                <button type="button" class="increase-decrease">+</button>
             </div>
-
         </section>
-        <hr>
         <section class="howto">
             <div class="ingredients-howto">
                 <hgroup class="howto-headers">
@@ -99,7 +121,8 @@
                     <li>Värm upp mjölken i en stor kastrull tills den börjar sjuda tillsammans med saltet.</li>
                     <li>Häll i makaronerna. Låt makaronerna sjuda försiktigt.</li>
                     <li>Se till att röra om i makaronerna med jämna mellanrum så att det inte bränner i botten.</li>
-                    <li>Fortsätt att sjuda makaronerna i ca 25 minuter. Provsmaka för att kontrollera att dom har rätt
+                    <li>Fortsätt att sjuda makaronerna i ca 25 minuter. Provsmaka för att kontrollera att dom har
+                        rätt
                         konsistens.</li>
                     <li>Stäng av plattan. Avsluta med att röra i smöret och muskotnöten.</li>
                 </ol>
@@ -110,6 +133,7 @@
             <button id="billigt" type="button">#BILLIGT</button>
             <button id="husman" type="button">#HUSMAN</button>
         </section>
+        </div>
         <section class="user-comments">
             <h1 id="comments">Kommentarer <i class="fa-solid fa-comment-dots"></i></h1>
             <hr>
