@@ -78,8 +78,7 @@
                             <div id="top-row-data">
                                 <p id="comments">9 kommentarer</p>
                                 <p id="save-recipe">Spara recept</i></p>
-                                <button type="button" id="save-recipe-button"><i
-                                    class="fa-solid fa-plus"></i></button>
+                                <button type="button" id="save-recipe-button"><i class="fa-solid fa-plus"></i></button>
                             </div>
                             <div id="bottom-row-data">
                                 <section id="star-rating">
@@ -103,21 +102,20 @@
                 <button type="button" class="increase-decrease">+</button>
             </div>
         </section>
-        <section class="howto">
-            <div class="ingredients-howto">
-                <hgroup class="howto-headers">
-                    <h1 id="ingredients">Ingredienser <i class="fa-solid fa-list-ul"></i></h1>
-                    <h1 id="Todo">Gör så här <i class="fa-solid fa-list-ol"></i></h1>
-                </hgroup>
-                <hr>
-                <ul class="ingredients-list">
+        <div class="ingredients-howto">
+            <div id="ingredients-header">
+                <h1 class="list-headers">Ingredienser <i class="fa-solid fa-list-ul"></i></h1>
+                <ul class="lists">
                     <li>5 dl Gammaldags makaroner</li>
                     <li>1 liter Standard mjölk</li>
                     <li>1 msk Smör</li>
                     <li>1 tsk Salt</li>
                     <li>1 krm Muskot</li>
                 </ul>
-                <ol class="todo-list">
+            </div>
+            <div id="howto-header">
+                <h1 class="list-headers">Gör så här <i class="fa-solid fa-list-ol"></i></h1>
+                <ol class="lists">
                     <li>Värm upp mjölken i en stor kastrull tills den börjar sjuda tillsammans med saltet.</li>
                     <li>Häll i makaronerna. Låt makaronerna sjuda försiktigt.</li>
                     <li>Se till att röra om i makaronerna med jämna mellanrum så att det inte bränner i botten.</li>
@@ -127,57 +125,56 @@
                     <li>Stäng av plattan. Avsluta med att röra i smöret och muskotnöten.</li>
                 </ol>
             </div>
-        </section>
+        </div>
         <section class="tags">
-            <button id="lunch" type="button">#LUNCH</button>
-            <button id="billigt" type="button">#BILLIGT</button>
-            <button id="husman" type="button">#HUSMAN</button>
+            <button class="tag-button" type="button">#LUNCH</button>
+            <button class="tag-button" type="button">#BILLIGT</button>
+            <button class="tag-button" type="button">#HUSMAN</button>
         </section>
         </div>
         <section class="user-comments">
-            <h1 id="comments">Kommentarer <i class="fa-solid fa-comment-dots"></i></h1>
-            <hr>
+            <h1 id="comments-header">Kommentarer<i class="fa-solid fa-comment-dots"></i></h1>
             <div class="comments-container">
                 <div class="comment-box">
-                    <img src="images/user-avatar-1.webp" alt="användar-avatar" width="35">
                     <div class="comment-content">
-                        <h4>_BroZster_</h4>
                         <p>“Enkelt reseppt Bro!”</p>
+                        <h4>_BroZster_</h4>
                     </div>
+                    <img class="user-avatar" src="images/user-avatar-1.webp" alt="användar-avatar">
                 </div>
                 <div class="comment-box">
-                    <img src="images/user-avatar-2.webp" alt="användar-avatar" width="35">
                     <div class="comment-content">
-                        <h4>n00b12</h4>
                         <p>“Vad är muskotnöt???+”</p>
+                        <h4>n00b12</h4>
                     </div>
+                    <img class="user-avatar" src="images/user-avatar-2.webp" alt="användar-avatar">
                 </div>
                 <div class="comment-box">
-                    <img src="images/user-avatar-3.jpg" alt="användar-avatar" width="35">
                     <div class="comment-content">
-                        <h4>z1gmaN0w</h4>
                         <p>“Blev mätt som fan Carbz4Life”</p>
+                        <h4>z1gmaN0w</h4>
                     </div>
+                    <img class="user-avatar" src="images/user-avatar-3.jpg" alt="användar-avatar">
                 </div>
                 <div class="comment-box">
-                    <img src="images/user-avatar-4.jpg" alt="användar-avatar" width="35">
                     <div class="comment-content">
-                        <h4>KungN</h4>
                         <p>“Kungrecept!”</p>
+                        <h4>KungN</h4>
                     </div>
+                    <img class="user-avatar" src="images/user-avatar-4.jpg" alt="användar-avatar">
                 </div>
                 <div class="comment-box">
-                    <img src="images/user-avatar-5.webp" alt="användar-avatar" width="35">
                     <div class="comment-content">
-                        <h4>SkibidiSkalman</h4>
                         <p>“Testade med ris, blev inte lika bra!”</p>
+                        <h4>SkibidiSkalman</h4>
                     </div>
+                    <img class="user-avatar" src="images/user-avatar-5.webp" alt="användar-avatar">
                 </div>
             </div>
-            <div class="next-slide">
+            <div class="next-slide-comments">
                 <div class="arrows">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <button><i class="fa-solid fa-arrow-left"></i></button>
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div class="scroll-dots">
                     <i class="fa-solid fa-circle"></i>
@@ -188,48 +185,48 @@
         </section>
         <section class="browse-recipes">
             <h1 id="browse-header">Fler recept</h1>
-            <hr>
             <div class="recipes-container">
-                <div class="recipe-box">
-                    <div class="recipe-box-content">
-                        <img src="images/recipe-suggestion-1.avif" alt="Bild på pasta med ost- och skinksås">
+                <div class="recipe-box-content">
+                    <img src="images/recipe-suggestion-1.avif" alt="Bild på pasta med ost- och skinksås">
+                    <div class="recipe-box-text">
                         <h3>Pasta med ost- och skinksås</h3>
                         <p id="rating">Betyg: 4.8/5</p>
                         <p>En god, klassisk och enkel ost- och skinksås med få ingredienser.</p>
                     </div>
                 </div>
-                <div class="recipe-box">
-                    <div class="recipe-box-content">
-                        <img src="images/recipe-suggestion-2.avif" alt="Bild på kebabgryta med ris ">
+                <div class="recipe-box-content">
+                    <img src="images/recipe-suggestion-2.avif" alt="Bild på kebabgryta med ris ">
+                    <div class="recipe-box-text">
                         <h3>Snabb kebabgryta med ris</h3>
                         <p id="rating">Betyg: 3.7/5</p>
                         <p>Med färdigt kebabkött, tomatsås och crème fraiche svänger du snabbt och enkelt ihop en god
                             kebabgryta.</p>
                     </div>
                 </div>
-                <div class="recipe-box">
-                    <div class="recipe-box-content">
-                        <img src="images/recipe-suggestion-3.avif" alt="Bild på korv Stroganoff med dill ">
+                <div class="recipe-box-content">
+                    <img src="images/recipe-suggestion-3.avif" alt="Bild på korv Stroganoff med dill ">
+                    <div class="recipe-box-text">
                         <h3>Korv Stroganoff med dill</h3>
                         <p id="rating">Betyg: 4.3/5</p>
                         <p>En riktigt god Stroganoff med falukorv, dijonsenap, dill och små tomater.</p>
                     </div>
                 </div>
-                <div class="next-slide">
-                    <div class="arrows">
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                    <div class="scroll-dots">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                        <i class="fa-regular fa-circle"></i>
-                    </div>
+            </div>
+            <div class="next-slide-comments">
+                <div class="arrows">
+                    <button><i class="fa-solid fa-arrow-left"></i></button>
+                    <button><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="scroll-dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
                 </div>
             </div>
+
         </section>
     </main>
-    <footer>Alfons Newberg</footer>
+    <footer id="creator">Alfons Newberg</footer>
 </body>
 
 </html>
